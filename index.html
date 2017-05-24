@@ -7,11 +7,9 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
+    <!-- 此处增加 media属性 只有在打印的时候才加载 -->
+    <link href="css/print.css" media="print" rel="stylesheet">
 
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
@@ -21,7 +19,8 @@
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
+    <!-- 此处增加 async属性 异步加载和执行 -->
+    <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
   </head>
 
@@ -68,5 +67,8 @@
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
     </div>
+
+    <!-- 在线字体下载缓慢，阻碍网页渲染 等页面显示后再调整字体 -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </body>
 </html>
